@@ -3,7 +3,6 @@ title: "Developing Data Products Course Project: Shiny Application and Reproduci
 author: "Christian Frei"
 date: "18 July 2017"
 output: slidy_presentation
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -69,14 +68,6 @@ https://github.com/Krysek/PeerGradedAssignment-CourseProject-ShinyApplicationAnd
 ## Shiny App: Example
 
 ```{r}
-library(shiny)
-
-shinyAppDir(
-   "ShinyApplication",
-   options=list(
-      width="100%"
-   )
- )
+knitr::include_app("https://frei.shinyapps.io/ShinyApplication/", height = "450px")
 ```
-<br /><br /><br /><br /><br /><br /><br />
 The developed shiny app for this assignment is also avalilable at: https://frei.shinyapps.io/ShinyApplication/

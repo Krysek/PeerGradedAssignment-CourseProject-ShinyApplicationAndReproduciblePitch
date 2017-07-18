@@ -12,27 +12,23 @@ library(shiny)
 
 # Define UI for application
 ui <- fluidPage(
-   
-   # Application title
-   titlePanel("Parabola"),
-   
    # Sidebar with a slider input
    sidebarLayout(
-      sidebarPanel(
+      inputPanel(
          sliderInput("stretchCompress",
-                     "Stretch(>1.0) or compress(<1.0):",
+                     "Stretch(>1.0) / Compress(<1.0)",
                      min = 0.2,
                      max = +1.8,
                      step = 0.2,
                      value = 1),
          sliderInput("xIntercept",
-                     "X Intercept:",
+                     "X Intercept",
                      min = -10,
                      max = 10,
                      step = 0.5,
                      value = 0),
          sliderInput("yIntercept",
-                     "Y Intercept:",
+                     "Y Intercept",
                      min = -10,
                      max = +10,
                      step = 0.5,

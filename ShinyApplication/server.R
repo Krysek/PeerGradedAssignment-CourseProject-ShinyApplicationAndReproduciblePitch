@@ -92,7 +92,7 @@ serverLogic <- function(input, output) {
                     shape = 4,
                     colour = "red")
       
-   })
+   }, height = 300, width = 300)
    
 }
 

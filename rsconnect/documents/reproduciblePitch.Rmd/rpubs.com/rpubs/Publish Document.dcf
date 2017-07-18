@@ -1,0 +1,8 @@
+name: Publish Document
+title:
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/292161/be4805fd2e444f348815e1fd0e2ffb4f
+bundleId: https://api.rpubs.com/api/v1/document/292161/be4805fd2e444f348815e1fd0e2ffb4f
+url: http://rpubs.com/Krysek/292161
+when: 1500398213.17833
