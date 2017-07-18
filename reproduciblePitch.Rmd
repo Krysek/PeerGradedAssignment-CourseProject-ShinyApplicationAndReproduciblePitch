@@ -1,0 +1,82 @@
+---
+title: "Developing Data Products Course Project: Shiny Application and Reproducible Pitch"
+author: "Christian Frei"
+date: "18 July 2017"
+output: slidy_presentation
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+* This pitch and shiny application was built for the "Developing Data Products" assignment.
+
+<br /><br />
+
+* The developed shiny app for this assignment is avalilable in this presentation and at: https://frei.shinyapps.io/ShinyApplication/
+
+<br /><br />
+
+* The source codes of ui.R and server.R and also the presentation are available on the GitHub repo: 
+https://github.com/Krysek/PeerGradedAssignment-CourseProject-ShinyApplicationAndReproduciblePitch.git
+
+## Parabola
+
+**Formula**
+<br />$y = \text{'Stretch or compress'} * (\text{'X intercept'} - x)^2 + \text{'Y intercept'}$
+
+<br />
+**Stretch or compress**
+
+* Strech (> 1.0) or compress (< 1.0) parabola
+* Value between 0.2 and 1.8
+
+<br />
+**X intercept**
+
+* Vertex position on the x axis
+* Value between -10 and 10
+
+<br />
+**Y intercept**
+
+* Vertex position on the y axis
+* Value between -10 and 10
+
+## Shiny App: Parabola
+**Sidebar panel**
+
+* sliderInput for Stretch or compress (min=0.2, max=+1.8, step=0.2)
+
+* sliderInput for X Intercept (min=-10, max=+10, step=0.5)
+
+* sliderInput for Y Intercept (min=-10, max=+10, step=0.5)
+
+<br /><br />
+**Main panel (ggplot)**
+
+* Title contains the customized parabola formula
+
+* Customized parabola (blue)
+
+* Marked vertex of customized parabola (red)
+
+* Normal parabola and its vertex (light grey)
+
+## Shiny App: Example
+
+```{r}
+library(shiny)
+
+shinyAppDir(
+   "ShinyApplication",
+   options=list(
+      width="100%"
+   )
+ )
+```
+<br /><br /><br /><br /><br /><br /><br />
+The developed shiny app for this assignment is also avalilable at: https://frei.shinyapps.io/ShinyApplication/
