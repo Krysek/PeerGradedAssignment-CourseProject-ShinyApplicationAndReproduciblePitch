@@ -1,0 +1,10 @@
+name: ShinyApplication
+title: ShinyApplication
+account: frei
+server: shinyapps.io
+appId: 197741
+bundleId: 907448
+url: https://frei.shinyapps.io/ShinyApplication/
+when: 1500385160.96688
+asMultiple: FALSE
+asStatic: FALSE
